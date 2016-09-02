@@ -1,0 +1,2 @@
+# FRYingxiangNoteDemo
+模仿印象笔记的动态cell变化 动态加载,主要是tableView的滑动至最顶部和最底部,一个拉伸cell的动画效果 点击cell的一个由cell变化至所需界面的大小的一个动态的跳转
