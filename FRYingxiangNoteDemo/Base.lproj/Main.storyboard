@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="468" y="538"/>
+        </scene>
+        <!--Note Detail View Controller-->
+        <scene sceneID="Eko-9M-E0D">
+            <objects>
+                <viewController storyboardIdentifier="NoteDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Tw-tM-GFJ" customClass="NoteDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PEo-la-S1g"/>
+                        <viewControllerLayoutGuide type="bottom" id="zNz-LJ-kyf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y9w-eX-2L2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GMW-il-Jb2">
+                                <rect key="frame" x="10" y="25" width="580" height="564"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxa-fz-Hha">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="564"/>
+                                        <connections>
+                                            <action selector="onBackBtnTap:" destination="4Tw-tM-GFJ" eventType="touchUpInside" id="R2f-Yl-gS9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Rxa-fz-Hha" firstAttribute="leading" secondItem="GMW-il-Jb2" secondAttribute="leading" id="R9o-0v-RdV"/>
+                                    <constraint firstItem="Rxa-fz-Hha" firstAttribute="top" secondItem="GMW-il-Jb2" secondAttribute="top" id="Rbm-60-ieg"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rxa-fz-Hha" secondAttribute="trailing" id="Yc0-O3-ABq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rxa-fz-Hha" secondAttribute="bottom" id="cTx-N9-Lw4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zNz-LJ-kyf" firstAttribute="top" secondItem="GMW-il-Jb2" secondAttribute="bottom" constant="11" id="0jV-DH-RnZ"/>
+                            <constraint firstItem="GMW-il-Jb2" firstAttribute="leading" secondItem="y9w-eX-2L2" secondAttribute="leadingMargin" id="4A4-Xn-REU"/>
+                            <constraint firstItem="GMW-il-Jb2" firstAttribute="top" secondItem="PEo-la-S1g" secondAttribute="bottom" constant="5" id="BIJ-4l-qXZ"/>
+                            <constraint firstItem="GMW-il-Jb2" firstAttribute="leading" secondItem="y9w-eX-2L2" secondAttribute="leading" constant="10" id="WRH-uH-n3V"/>
+                            <constraint firstItem="GMW-il-Jb2" firstAttribute="centerX" secondItem="y9w-eX-2L2" secondAttribute="centerX" id="hH0-mN-9rM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4A4-Xn-REU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backGroundView" destination="GMW-il-Jb2" id="URG-xD-LbK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XaV-Cy-Fyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82" y="-473"/>
+        </scene>
+    </scenes>
+</document>
